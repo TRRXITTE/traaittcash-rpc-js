@@ -4,8 +4,8 @@ module.exports = {
   mode: 'production',
   entry: './index.js',
   output: {
-    filename: 'TurtleCoinRPC.js',
-    library: 'TurtleCoinRPC',
+    filename: 'traaittCASHRPC.js',
+    library: 'traaittCASHRPC',
     libraryTarget: 'umd'
   },
   node: {

@@ -5,7 +5,7 @@
   "source": {
     "include": [
       "README.md",
-      "lib/turtlecoind-rpc.js",
+      "lib/xtcashnetwork-rpc.js",
       "lib/walletapi-rpc.js"
     ]
   },

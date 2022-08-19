@@ -1,6 +1,6 @@
-![image](https://user-images.githubusercontent.com/34389545/35821974-62e0e25c-0a70-11e8-87dd-2cfffeb6ed47.png)
+![image](https://github.com/TRRXITTE/traaittCASH/blob/master/docs/XTCASH.png)
 
-# TurtleCoin RPC
+# traaittCASH RPC
 
 [![NPM](https://nodei.co/npm/turtlecoin-rpc.png?downloads=true&stars=true)](https://nodei.co/npm/turtlecoin-rpc/)
 
@@ -13,45 +13,45 @@ This project is designed to make it very easy to interact with various RPC APIs 
 
 ## Package Upgrade Warning
 
-v2.0.0+ contains multiple breaking changes to the package including the removal of support for Turtle-Service, removal of deprecated TurtleCoind RPC calls that will be removed, renaming of methods, and method argument changes throughout. Please be sure to read the documentation in full before upgrading to v2.0.0+.
+v2.0.0+ contains multiple breaking changes to the package including the removal of support for Turtle-Service, removal of deprecated XTCASHnetwork RPC calls that will be removed, renaming of methods, and method argument changes throughout. Please be sure to read the documentation in full before upgrading to v2.0.0+.
 
 ## Table of Contents
 
 1. [Dependencies](#dependencies)
 2. [Installation](#installation)
 3. [Intialization](#intialization)
-4. [TurtleCoind RPC API Interface](#turtlecoind-rpc-api-interface)
+4. [traaittCASH RPC API Interface](#xtcashnetwork-rpc-api-interface)
 5. [WalletAPI Interface](#walletapi-interface)
 
 ## Dependencies
 
 * [NodeJS v8.x](https://nodejs.org) >= 8.x
-* [TurtleCoin](https://github.com/turtlecoin/turtlecoin/releases) >= v0.8.4
+* [traaittCASH](https://github.com/turtlecoin/turtlecoin/releases) >= v1.4.4
 
 ## Installation
 
 ```bash
-npm install turtlecoin-rpc
+npm install traaittcash-rpc
 ```
 
 ## Intialization
 
-### TurtleCoind
+### XTCASHnetwork
 ```javascript
-const TurtleCoind = require('turtlecoin-rpc').TurtleCoind
+const XTCASHnetwork = require('traaittcash-rpc').XTCASHnetwork
 
-const daemon = new TurtleCoind({
-  host: '127.0.0.1', // ip address or hostname of the TurtleCoind host
-  port: 11898, // what port is the RPC server running on
+const daemon = new XTCASHnetwork({
+  host: '127.0.0.1', // ip address or hostname of the XTCASHnetwork host
+  port: 14486, // what port is the RPC server running on
   timeout: 2000, // request timeout
   ssl: false, // whether we need to connect using SSL/TLS
-  userAgent: 'turtlecoin-rpc/2.0.0' // specify a customer user-agent or use the default
+  userAgent: 'traaittcash-rpc/2.0.0' // specify a customer user-agent or use the default
 })
 ```
 
 ### Wallet-API
 ```javascript
-const WalletAPI = require('turtlecoin-rpc').WalletAPI
+const WalletAPI = require('traaittcash-rpc').WalletAPI
 
 const wallet = new WalletAPI({
   host: '127.0.0.1', // ip address or hostname of wallet-api host
@@ -60,20 +60,21 @@ const wallet = new WalletAPI({
   ssl: false, // whether or not to connect through SSL
   password: 'password', // your rpc password
   defaultMixin: 3, // should be configured to the default mixin, or false if no default mixin is set
-  defaultFee: 0.1, // the default fee of your network, in decimal not atomic units
-  decimalDivisor: 100, // how many decimals will be used
+  defaultFee: 0.0000001, // the default fee of your network, in decimal not atomic units
+  decimalDivisor: 100000000, // how many decimals will be used
   defaultUnlockTime: 0, // default unlock time
-  userAgent: 'turtlecoin-rpc/2.0.0' // specify a customer user-agent or use the default
+  userAgent: 'traaittcash-rpc/2.0.0' // specify a customer user-agent or use the default
 })
 ```
 
 ### Documentation
 
-You can find the full documentation for this library [here](https://js-rpc.turtlecoin.dev)
+You can find the full documentation for this library [here](https://documentation.trrxitte.com/developer/api/Daemon-JSON-RPC-API)
 
 ## License
 
 ```
+Copyright (C) 2022 - TODAY, TRRXITTE Int., incorporate
 Copyright (C) 2018-2019 Brandon Lehmann, The TurtleCoin Developers
 
 Please see the included LICENSE file for more information.

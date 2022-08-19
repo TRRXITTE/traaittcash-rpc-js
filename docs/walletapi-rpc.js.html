@@ -47,10 +47,10 @@ class WalletAPI {
    * @param {boolean} [opts.ssl=false] - whether the daemon uses SSL (HTTPS) or not
    * @param {string} opts.password - the password for the RPC interface
    * @param {number} [opts.defaultMixin=false] - the default mixin count to use
-   * @param {number} [opts.defaultFee=0.1] - the default transaction fee to use
-   * @param {number} [opts.decimalDivisor=100] - the decimal divisor of atomic amounts
+   * @param {number} [opts.defaultFee=0.0000001] - the default transaction fee to use
+   * @param {number} [opts.decimalDivisor=100000000] - the decimal divisor of atomic amounts
    * @param {number} [opts.defaultUnlockTime=0] - the default unlock time for new transactions
-   * @param {string} [opts.userAgent=turtlecoin-rpc/version] - the user agent string to use with requests
+   * @param {string} [opts.userAgent=traaittcash-rpc/version] - the user agent string to use with requests
    */
   constructor (opts) {
     opts = opts || {}
@@ -61,8 +61,8 @@ class WalletAPI {
     this.ssl = opts.ssl || false
     this.password = opts.password || false
     this.defaultMixin = (opts.defaultMixin !== undefined) ? opts.defaultMixin : false
-    this.defaultFee = (opts.defaultFee !== undefined) ? opts.defaultFee : 0.1
-    this.decimalDivisor = opts.decimalDivisor || 100
+    this.defaultFee = (opts.defaultFee !== undefined) ? opts.defaultFee : 0.0000001
+    this.decimalDivisor = opts.decimalDivisor || 100000000
     this.defaultUnlockTime = opts.defaultUnlockTime || 0
     this.userAgent = opts.userAgent || util.format('%s/%s', packageInfo.name, packageInfo.version)
 
@@ -285,13 +285,13 @@ class WalletAPI {
    * @param {string} filename - the filename for the new wallet container
    * @param {string} password - the password for the wallet container
    * @param {string} [host=127.0.0.1] - the node to use for the wallet container
-   * @param {number} [port=11898] - the node port to use for the wallet container
+   * @param {number} [port=14486] - the node port to use for the wallet container
    * @param {boolean} [ssl=false] - if the node uses SSL
    * @returns {Promise} resolves if success else rejects with error
    */
   create (filename, password, host, port, ssl) {
     host = host || '127.0.0.1'
-    port = port || 11898
+    port = port || 14486
     ssl = ssl || false
 
     return new Promise((resolve, reject) => {
@@ -450,14 +450,14 @@ class WalletAPI {
    * @param {string} privateSpendKey - the private spend key to import
    * @param {number} [scanHeight=0] - the height to import the wallet from
    * @param {string} [host=127.0.0.1] - the host of the node to use
-   * @param {number} [port=11898] - the port of the node to use
+   * @param {number} [port=14486] - the port of the node to use
    * @param {boolean} [ssl=false] - whether the node uses SSL
    * @returns {Promise} resolves upon success else rejects with error
    */
   importKey (filename, password, privateViewKey, privateSpendKey, scanHeight, host, port, ssl) {
     scanHeight = scanHeight || 0
     host = host || '127.0.0.1'
-    port = port || 11898
+    port = port || 14486
     ssl = ssl || false
 
     return new Promise((resolve, reject) => {
@@ -491,14 +491,14 @@ class WalletAPI {
    * @param {string} mnemonicSeed - the mnemonic seed of the wallet to import
    * @param {number} [scanHeight=0] - the height to import the wallet from
    * @param {string} [host=127.0.0.1] - the host of the node to use
-   * @param {number} [port=11898] - the port of the node to use
+   * @param {number} [port=14486] - the port of the node to use
    * @param {boolean} [ssl=false] - whether the node uses SSL
    * @returns {Promise} resolves upon success else rejects with error
    */
   importSeed (filename, password, mnemonicSeed, scanHeight, host, port, ssl) {
     scanHeight = scanHeight || 0
     host = host || '127.0.0.1'
-    port = port || 11898
+    port = port || 14486
     ssl = ssl || false
 
     return new Promise((resolve, reject) => {
@@ -556,14 +556,14 @@ class WalletAPI {
    * @param {string} address - the wallet address
    * @param {number} [scanHeight=0] - the height to import the wallet from
    * @param {string} [host=127.0.0.1] - the host of the node to use
-   * @param {number} [port=11898] - the port of the node to use
+   * @param {number} [port=14486] - the port of the node to use
    * @param {boolean} [ssl=false] - whether the node uses SSL
    * @returns {Promise} resolves upon success else rejects with error
    */
   importViewOnly (filename, password, privateViewKey, address, scanHeight, host, port, ssl) {
     scanHeight = scanHeight || 0
     host = host || '127.0.0.1'
-    port = port || 11898
+    port = port || 14486
     ssl = ssl || false
 
     return new Promise((resolve, reject) => {
@@ -656,13 +656,13 @@ class WalletAPI {
    * @param {string} filename - the filename of the wallet container
    * @param {string} password - the password of the wallet container
    * @param {string} [host=127.0.0.1] - the host of the node to use
-   * @param {number} [port=11898] - the port of the node to use
+   * @param {number} [port=14486] - the port of the node to use
    * @param {boolean} [ssl=false] - whether the node uses SSL
    * @returns {Promise} resolves upon success else rejects with error
    */
   open (filename, password, host, port, ssl) {
     host = host || '127.0.0.1'
-    port = port || 11898
+    port = port || 14486
     ssl = ssl || false
 
     return new Promise((resolve, reject) => {
@@ -1166,7 +1166,7 @@ module.exports = WalletAPI
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="TurtleCoind.html">TurtleCoind</a></li><li><a href="WalletAPI.html">WalletAPI</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="XTCASHnetwork.html">XTCASHnetwork</a></li><li><a href="WalletAPI.html">WalletAPI</a></li></ul>
 </nav>
 
 <br class="clear">
