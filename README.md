@@ -2,7 +2,7 @@
 
 # traaittCASH RPC
 
-[![NPM](https://nodei.co/npm/@trrxitte/traaittcash-rpc.png?downloads=true&stars=true)](https://nodei.co/npm/@trrxitte/traaittcash-rpc/)
+[![NPM](https://nodei.co/npm/@trrxitte/traaittcash-rpc.png?downloads=true&stars=true)](https://www.npmjs.com/package/@trrxitte/traaittcash-rpc)
 
 ![Prerequisite](https://img.shields.io/badge/node-%3E%3D8-blue.svg) [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://js-rpc.turtlecoin.dev) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/trrxitte/traaittcash-rpc-js/graphs/commit-activity) [![License: GPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-yellow.svg)](https://github.com/trrxitte/traaittcash-rpc-js/blob/master/LICENSE) [![Twitter: TRRXITTE](https://img.shields.io/twitter/follow/TRRXITTE.svg?style=social)](https://twitter.com/TRRXITTE)
 
