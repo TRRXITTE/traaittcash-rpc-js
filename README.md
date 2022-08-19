@@ -9,7 +9,7 @@
 #### Master Build Status
 [![Build Status](https://travis-ci.org/turtlecoin/turtlecoin-rpc-js.png?branch=master)](https://travis-ci.org/turtlecoin/turtlecoin-rpc-js) [![Build Status](https://ci.appveyor.com/api/projects/status/github/brandonlehmann/turtlecoin-rpc?branch=master&svg=true)](https://ci.appveyor.com/project/brandonlehmann/turtlecoin-rpc/branch/master)
 
-This project is designed to make it very easy to interact with various RPC APIs available within the [TurtleCoin](https://turtlecoin.lol) Project. This entire project uses [Javascript Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) to make things fast, easy, and safe.
+This project is designed to make it very easy to interact with various RPC APIs available within the [traaittCASH](https://traaittcash.com) Project. This entire project uses [Javascript Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) to make things fast, easy, and safe.
 
 ## Package Upgrade Warning
 
